@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "plugin": "ff-work-toolkit",
   "version": "0.1.0",
-  "sourceCommit": "5539d743befd6e1fbc985c0dbdc7c78cfe1f350e",
+  "sourceCommit": "2162606a889cf2857ca11fe28469fcf3d0354b7a",
   "sharedRuntimeVersion": "0.146.1",
   "configSchemaVersion": 1,
   "license": "Apache-2.0",
