@@ -1,6 +1,6 @@
 {
   "name": "ff-work-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "業務の言葉でAIと始める市民開発。asdd-init（対話による初期設定）・asdd-work（文章や集計の作成、作業記録、再開）の2つのスキルと文書検索MCP。",
   "author": {
     "name": "FeelFlow Inc."

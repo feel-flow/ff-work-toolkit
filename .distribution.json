@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
   "plugin": "ff-work-toolkit",
-  "version": "0.1.0",
-  "sourceCommit": "2162606a889cf2857ca11fe28469fcf3d0354b7a",
-  "sharedRuntimeVersion": "0.146.1",
+  "version": "0.1.1",
+  "sourceCommit": "93de49519d347aff608d87999289fde9844454c6",
+  "sharedRuntimeVersion": "0.164.0",
   "configSchemaVersion": 1,
   "license": "Apache-2.0",
   "files": {
     ".claude-plugin/marketplace.json": "e14c50c0729bad17bbf71ce3c0658e96568b9727ed4e24c213c35b04d8e5f755",
-    ".claude-plugin/plugin.json": "68f139d9f4c701a31c3c4828e58e4d62dd30bd37a8048387feb39a90ffad612e",
+    ".claude-plugin/plugin.json": "e66bd5dba2936d50cac418de515166e2cf7b4f9b2c57ad2e98d4da61a858a879",
     ".mcp.json": "366b47bbc99e085d01e285ac94eff019440e4e42b39cf0c5d2cfbc644fb2eb39",
-    "docs/configuration.md": "ea36df4a75b0dd5da8c06fb29190e568bd16e3949f92f958283477664af62504",
+    "docs/configuration.md": "f24ca33a717df56e740af209a1fb2466686392e3735957d50ced008a026e992a",
     "LICENSE": "f3ea7ac89bd824d39509a2b10a5515cb9e2a39c4bb7aaa5cc76e4d149d55f7b6",
-    "mcp/dist/index.js": "5eb63508eb95f683dd79a52dd99cc4bb8359c479edd954591de358c7774dc50a",
+    "mcp/dist/index.js": "cffaa919255a04cb02bc0857de0a20afb2a2f0097df7b6b470676687088032e7",
     "README.md": "d464cdf2a0ec5fe86b4a984203c79b29efb885b12ec4b79b2e7b2196640bf645",
     "scripts/asdd/cli.mjs": "586ac966ef93a4c0f428aa32898c4929e7430491492f3e5afb5597b3f334a198",
-    "scripts/asdd/config.mjs": "84ac9e44dfac04d6fd48fdf5cf419773fac4d739a8b20ec06833bc4f3493319e",
-    "scripts/asdd/generate.mjs": "7548e3f5c49b38ec7fb3bcb2f340de9f52fd23816db317d9ff3ce5f0c4b46152",
-    "scripts/asdd/work.mjs": "3809740cef6d27214759d4e4c8ffae2f7b7031473a7ebaba166201b71ffab7d9",
-    "scripts/work.mjs": "87dc0455567755fb58459a1d33094bbb76c9fcb71f9a6ce25a9b1f3b1b4a4bfb",
-    "skills/asdd-init/SKILL.md": "afe1efc14e9b13236432030e22897f6925865b5b31ac993921da6608ff62d5eb",
-    "skills/asdd-work/SKILL.md": "0f90d4344e0ea52b9900d989408c8d3edd30c1405c73d01d68e718c95be3a9ba"
+    "scripts/asdd/config.mjs": "b005d9fa6154ddb0730982a9f86ad6ca8ce92eb1f254827a03a156c6ea3e63ac",
+    "scripts/asdd/generate.mjs": "2a9eb26fbb576cbedfa284cc660eb071bd272023de8ff29e9d97a59cce4e3cdb",
+    "scripts/asdd/work.mjs": "9dc3402cff3a42c435ee70cae527e1d6c2cd4f8044480c084a8319bc165fe951",
+    "scripts/work.mjs": "b75cbc77ce07b0bc70ef571e37e04b78e3f044586c1493fd0c6104657aebdb0d",
+    "skills/asdd-init/SKILL.md": "94ee8732f09299d162fd72f35d6806108425558b8af758fb35f0d6f2e00a9b96",
+    "skills/asdd-work/SKILL.md": "9083e7358a3877cffe86027166082ea0ffcbada4feffba005f3c9fb1900498a5"
   }
 }

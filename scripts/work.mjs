@@ -37,8 +37,18 @@ try {
     if (stat.isSymbolicLink() || fs.realpathSync(target) !== target || (relative.endsWith('.mjs') ? !stat.isFile() : !stat.isDirectory())) throw new Error(`Runtime is not a regular resource under this plugin: ${relative}`);
   }
   // No fallback to another installed plugin or a developer checkout.
-  const { loadConfig, validateConfig } = await import(new URL('./asdd/config.mjs', import.meta.url));
-  const current = loadConfig(fs.realpathSync(project));
+  const { loadConfig, validateConfig, ORPHAN_STATE_CODE } = await import(new URL('./asdd/config.mjs', import.meta.url));
+  let current;
+  try { current = loadConfig(fs.realpathSync(project)); }
+  catch (error) {
+    // Re-applying agreed settings is the documented recovery from a deleted config, and
+    // the generator reads its own state rather than loadConfig. Everything else stops.
+    if (mode !== 'init' || !input || error.code !== ORPHAN_STATE_CODE) throw error;
+    // Judge unsupported features against the last applied settings, so a deleted config
+    // cannot be the way to drop them silently.
+    current = error.recorded;
+    process.stderr.write('ff-work-toolkit: .asdd/config.json is missing while generation state remains; proceeding with the agreed settings to restore it\n');
+  }
   const proposed = input ? validateConfig(JSON.parse(fs.readFileSync(input, 'utf8'))) : null;
   for (const config of [current, proposed]) {
     if (!config) continue;
